@@ -4,7 +4,7 @@
 #
 Name     : R-slam
 Version  : 0.1.43
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/slam_0.1-43.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/slam_0.1-43.tar.gz
 Summary  : Sparse Lightweight Arrays and Matrices
