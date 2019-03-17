@@ -4,7 +4,7 @@
 #
 Name     : R-slam
 Version  : 0.1.45
-Release  : 17
+Release  : 18
 URL      : https://cran.r-project.org/src/contrib/slam_0.1-45.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/slam_0.1-45.tar.gz
 Summary  : Sparse Lightweight Arrays and Matrices
@@ -32,10 +32,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1551193061
+export SOURCE_DATE_EPOCH=1552797311
 
 %install
-export SOURCE_DATE_EPOCH=1551193061
+export SOURCE_DATE_EPOCH=1552797311
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -71,8 +71,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library slam|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  slam || :
 
 
 %files
@@ -96,8 +95,44 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/slam/help/slam.rdx
 /usr/lib64/R/library/slam/html/00Index.html
 /usr/lib64/R/library/slam/html/R.css
-/usr/lib64/R/library/slam/libs/symbols.rds
 /usr/lib64/R/library/slam/po/en@quot/LC_MESSAGES/R-slam.mo
+/usr/lib64/R/library/slam/tests/abind.R
+/usr/lib64/R/library/slam/tests/abind.Rout.save
+/usr/lib64/R/library/slam/tests/apply.R
+/usr/lib64/R/library/slam/tests/apply.Rout.save
+/usr/lib64/R/library/slam/tests/crossprod.R
+/usr/lib64/R/library/slam/tests/crossprod.Rout.save
+/usr/lib64/R/library/slam/tests/dimgets.R
+/usr/lib64/R/library/slam/tests/extract.R
+/usr/lib64/R/library/slam/tests/extract.Rout.save
+/usr/lib64/R/library/slam/tests/matrix.R
+/usr/lib64/R/library/slam/tests/matrix.Rout.save
+/usr/lib64/R/library/slam/tests/matrix_dimnames.R
+/usr/lib64/R/library/slam/tests/matrix_dimnames.Rout.save
+/usr/lib64/R/library/slam/tests/rollup.R
+/usr/lib64/R/library/slam/tests/rollup.Rout.save
+/usr/lib64/R/library/slam/tests/split.R
+/usr/lib64/R/library/slam/tests/split.Rout.save
+/usr/lib64/R/library/slam/tests/ssa_valid.R
+/usr/lib64/R/library/slam/tests/ssa_valid.Rout.save
+/usr/lib64/R/library/slam/tests/stm.R
+/usr/lib64/R/library/slam/tests/stm.Rout.save
+/usr/lib64/R/library/slam/tests/stm_apply.R
+/usr/lib64/R/library/slam/tests/stm_apply.Rout.save
+/usr/lib64/R/library/slam/tests/stm_rollup.R
+/usr/lib64/R/library/slam/tests/stm_rollup.Rout.save
+/usr/lib64/R/library/slam/tests/stm_subassign.R
+/usr/lib64/R/library/slam/tests/stm_subassign.Rout.save
+/usr/lib64/R/library/slam/tests/stm_ttcrossprod.R
+/usr/lib64/R/library/slam/tests/stm_ttcrossprod.Rout.save
+/usr/lib64/R/library/slam/tests/stm_valid.R
+/usr/lib64/R/library/slam/tests/stm_valid.Rout.save
+/usr/lib64/R/library/slam/tests/stm_zeros.R
+/usr/lib64/R/library/slam/tests/stm_zeros.Rout.save
+/usr/lib64/R/library/slam/tests/subassign.R
+/usr/lib64/R/library/slam/tests/subassign.Rout.save
+/usr/lib64/R/library/slam/tests/util.R
+/usr/lib64/R/library/slam/tests/util.Rout.save
 
 %files lib
 %defattr(-,root,root,-)
