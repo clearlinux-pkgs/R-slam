@@ -4,7 +4,7 @@
 #
 Name     : R-slam
 Version  : 0.1.45
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/slam_0.1-45.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/slam_0.1-45.tar.gz
 Summary  : Sparse Lightweight Arrays and Matrices
@@ -32,10 +32,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552797311
+export SOURCE_DATE_EPOCH=1552939644
 
 %install
-export SOURCE_DATE_EPOCH=1552797311
+export SOURCE_DATE_EPOCH=1552939644
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
